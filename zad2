@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(void)
+{
+    char ASCII;
+    printf("Введите ASCII код:\n");
+    scanf("%d", &ASCII);
+    printf("ASCII код для %d это %c", ASCII, ASCII);
+    getchar();getchar();
+    return 0;
+}
