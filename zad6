@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(void)
+{
+    float kvart, ves_vod, moleculi;
+    printf("Введите кол-во кварт воды: ");
+    scanf("%d", &kvart);
+    ves_vod = kvart * 950;
+    moleculi = ves_vod / 3.0e-23;
+    printf("Кол-во молекул воды: %e", moleculi);
+    getchar();
+    return 0;
+}
