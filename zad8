@@ -1,1 +1,14 @@
-
+#include <stdio.h>
+int main(void)
+{
+    float pints, cups, uncia, stol_spun, tea_spun;
+    printf("Введите объем в чашках: ");
+    scanf("%f", &cups);
+    pints = cups / 2; uncia = cups * 8; stol_spun = uncia * 2; tea_spun = stol_spun * 3;
+    printf("Объем %.2f чашек в пинтах: %.2f\n", cups, pints);
+    printf("Объем %.2f чашек в унциях: %.2f\n", cups, uncia);
+    printf("Объем %.2f чашек в столовых ложках: %.2f\n", cups, stol_spun);
+    printf("Объем %2.f чашек в чайных ложках: %.2f\n", cups, tea_spun);
+    getchar();
+    return 0;
+}
