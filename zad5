@@ -1,1 +1,11 @@
-
+#include <stdio.h>
+int main(void)
+{
+    int years, secunds;
+    printf("Введите ваш возраст: ");
+    scanf("%d", &years);
+    secunds = years * 3.156e7;
+    printf("Ваш возраст в секундах: %d", secunds);
+    getchar();
+    return 0;
+}
