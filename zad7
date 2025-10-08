@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(void)
+{
+    float rost_dium, rost_cm;
+    printf("Ведите ваш рост в сантиметрах: ");
+    scanf("%f", &rost_cm);
+    rost_dium = rost_cm / 2.54;
+    printf("Ваш рост в дюймах: %f", rost_dium);
+    getchar();
+    return 0;
+}
