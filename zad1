@@ -1,15 +1,25 @@
-#include<limits.h>
-#include<float.h>
-#include<stdio.h>
-int main(void)
+#include <stdio.h>
+#include <limits.h>
+#include <float.h>
+int main()
 {
-    printf("Некоторые пределы чисел для данной сиситемы:\n");
-    printf("Наибольшее значение типа int: %d\n", INT_MAX);
-    printf("Наименьшее значение типа long long: %lld\n", LLONG_MIN);
-    printf("В данной системе один байт = %d битов.\n", CHAR_BIT);
-    printf("Наименьшее нормализованное значение типа float: %e\n", FLT_MIN);
-    printf("Наибольшее значение типа double: %e\n", DBL_MAX);
-    printf("Точность значений типа float = %d знаков\n", FLT_DIG);
-    printf("Разница между 1.00 и минимальным значением float, которое больше 1.00 = %e\n", FLT_EPSILON);
-    return 0;
+        printf("МАКС значение для целых чисел = %d\n", INT_MAX);
+        printf("МАКС значение для чисел с плав запятой = %e\n", FLT_MAX);
+        printf("МИН значение для чисел с плав запятой  = %e\n", FLT_MIN);
+        printf("Переполнение Int: %d + 100 = %d\n", INT_MAX, INT_MAX + 100);
+        printf("Переполнение Flt: %e * 100 = %e\n", FLT_MAX, FLT_MAX * 100);
+        printf("Потеря значимости Flt: %e / 10 = %e\n", FLT_MIN, FLT_MIN / 10);
+        printf("%d\n", SHRT_MAX + 1);
+        printf("%u\n", USHRT_MAX + 1);
+        printf("%ld\n", LONG_MAX + 1);
+        printf("%lu\n", ULONG_MAX + 1);
+        printf("%u\n", UINT_MAX + 1);
+        printf("%lld\n", LLONG_MAX + 1);
+        printf("%llu\n", ULLONG_MAX + 1);
+        printf("%c\n", CHAR_MAX + 1);
+        printf("%e\n", DBL_MIN / 10);
+        printf("%le\n"", LDBL_MIN / 10);
+        
+
+        return 0;
 }
